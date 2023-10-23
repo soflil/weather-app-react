@@ -1,9 +1,20 @@
 .Weather {
   border: 1px solid #dadde1;
-  color: #878787;
+  color: #838181;
   font-family: arial, sans-serif;
   padding: 16px;
   border-radius: 4px;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.Weather .search-button {
+  border: 1px solid #fff;
+  background: #afe0f7;
+}
+
+.Weather .search-button:hover {
+  border: 1px solid #afe0f7;
+  background: #fff;
 }
 
 .Weather h1 {
