@@ -55,7 +55,7 @@
   line-height: 1;
 }
 
-.Weather canvas {
+.Weather .weather-icon-today {
   margin-right: 10px;
   float: left;
 }

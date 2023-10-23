@@ -26,7 +26,7 @@ export default function WeatherIcon(props) {
     <ReactSkycon
       icon={codeMapping[props.code]}
       color="black"
-      size={54}
+      size={props.size}
       animate={true}
     />
   );

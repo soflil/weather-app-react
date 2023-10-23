@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Vortex } from "react-loader-spinner";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
-import { Vortex } from "react-loader-spinner";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ active: false });
@@ -60,6 +61,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast />
       </div>
     );
   } else {
