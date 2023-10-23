@@ -23,13 +23,11 @@ export default function WeatherIcon(props) {
   };
 
   return (
-    <div className="float-left">
-      <ReactSkycon
-        icon={codeMapping[props.code]}
-        color="black"
-        size={54}
-        animate={true}
-      />
-    </div>
+    <ReactSkycon
+      icon={codeMapping[props.code]}
+      color="black"
+      size={54}
+      animate={true}
+    />
   );
 }
