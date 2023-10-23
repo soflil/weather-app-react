@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import { Vortex } from "react-loader-spinner";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ active: false });
@@ -64,6 +65,16 @@ export default function Weather(props) {
   } else {
     search();
 
-    return "Loading weather data...";
+    return (
+      <Vortex
+        visible={true}
+        height="120"
+        width="120"
+        ariaLabel="vortex-loading"
+        wrapperStyle={{}}
+        wrapperClass="vortex-wrapper"
+        colors={["red", "green", "blue", "yellow", "orange", "purple"]}
+      />
+    );
   }
 }
