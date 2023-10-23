@@ -14,7 +14,22 @@ export default function App() {
           >
             Open-source code
           </a>
-          , by Sophie Schou
+          , hosted on{" "}
+          <a
+            href="https://startling-chebakia-9795cf.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
+          </a>
+          , by{" "}
+          <a
+            href="https://www.linkedin.com/in/sophie-schou-166b85278/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Sophie Schou
+          </a>
         </footer>
       </div>
     </div>
